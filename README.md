@@ -3,7 +3,7 @@ a windows compatiple OS kernel for x86 and ARM 32/64bit
 
 note: there is nothing usefull, yet. i just start the project.
 
-this kernel is loaded by the bootloader. it consist of kernel386.exe vidmem.dll hal.dll.
+this kernel is loaded by the bootloader. it consist of ntoskrnl.exe vidmem.dll hal.dll.
 
 these modules are native PE modules.
 we can build all in 32bit or all in 64bit.
