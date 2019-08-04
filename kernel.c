@@ -1,6 +1,6 @@
 // the kernel
 
-void kernel_entry_point( LoaderParameterBlock* bootParams)
+EXTERN_C int NTAPI KiSystemStartup(PLOADER_PARAMETER_BLOCK LoaderBlock)
 {
   return 2;
 }
