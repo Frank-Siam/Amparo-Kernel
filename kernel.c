@@ -1,6 +1,6 @@
 // the kernel
 
-void kernel_entry_point( BootParameterBlock* bootParams)
+void kernel_entry_point( LoaderParameterBlock* bootParams)
 {
   return 2;
 }
