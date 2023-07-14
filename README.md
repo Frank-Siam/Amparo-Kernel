@@ -3,7 +3,7 @@ a windows compatiple OS kernel for x86 and ARM 32/64bit
 
 note: there is nothing usefull, yet. i just start the project.
 
-this kernel is loaded by the bootloader. it consist of ntoskrnl.exe vidmem.dll hal.dll.
+this kernel is loaded by the bootloader. it consist of ntoskrnl.exe bootvid.dll hal.dll.
 
 these modules are native PE modules.
 we can build all in 32bit or all in 64bit.
@@ -11,6 +11,7 @@ we can build all in 32bit or all in 64bit.
 the kernel provides kernel services as exported functions to the rest of the system.
 the next level of services will be drivers and a executive or subsystem. win32-subsystem will be the most important one.
 
-this repo will hold ntoskrnl bootvid kdcom hal
+this repo will hold ntoskrnl bootvid kdcom hal. bootvid.dll kdcom.dll hal.dll are just a split of implementaion details of the kernel.
+no driver or other module should import from bootvid.dll kdcom.dll hal.dll directly, we look into this...
 
 the next level of the os is the native API ntdll smss other subsystems  this modules will be organized? i will decide later
